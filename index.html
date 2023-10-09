@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/6e0bececf7.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100&family=Lexend+Deca:wght@100;900&family=Montserrat&family=Poiret+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <title>Ballon</title>
+    </head>
+    <body class="bak">
+        <div class="titlebar">
+            <div class="logo">
+                <h1>Ballon</h1>
+            </div>
+            <div class="search-bar">
+                <form id="weatherForm">
+                    <input class="typ-search" type="text" id="location" name="location" required>
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+            <div class="tbleft">
+                <nav>
+                    <a href="#scroll2">
+                        <div>
+                            <button class="tbbtn">Weather Alerts</button>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+            
+        </div>
+
+        <div>
+            <div class="db">            
+                <div id="dashright">
+                    <div>
+                        <div>
+                            <div>
+                                <div class="tmc">
+                                    <div class="tl">
+                                        <div class="temp-on-card">
+                                            <h3 class="cw">Current Weather</h3>
+                                            <h1 class="temp-margin">27&deg;<span class="c-color">C</span></h1>
+                                            <div class="temp-on-card-feel"><h4 class="h-margin">feel's like.<h4 class="h-margin1">description</h4></h4></div>
+                                            
+                                        </div>
+    
+                                        <div class="place-on-card">
+                                           <span class="make-this-middle">
+                                                <h2 class="place-name">
+                                                    Your Location
+                                                </h2>
+                                                <h4 class="h-name2">Country . <span class="the-country-name">Country</span></h4>
+                                            </span>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="tl-b">        
+                                        
+                                        <nav>
+                                            <a href="#scroll1">
+                                                <div class="mdb">
+                                                    <button class="mdb-btn">MORE DETAILS</button>
+                                                </div>
+                                            </a>
+                                        </nav>
+                                        
+                                    </div>
+                    
+    
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="ftitle3">
+                            <h3>Five-Day Weather Forecast</h3>
+                           
+                        </div>
+                        <div class="end-cards">
+                            <div class="mapcard"> 
+                                <span class="first-name"><h3><span class="tomorrow-color"><span class="today-date">Tomorrow</span></span></h3></span>
+                                <span class="first-name2"><h3><span class="min-temp">0&deg;C</span> / <span class="max-temp">0&deg;C</span></h3></span></span>
+                                <!-- <span class="first-name2"><h3><span class="avg-percipitation">rain</span></h3></span> -->
+                                <img src="Images/umbrella.png" alt="clouds and rain icon" class="rain-icon">
+                                <span><h3 class="avg-percipitation"><span class="name-precipitation">rain</span></h3></span>
+                                <img src="Images/humidity.png" alt="humidity" class="rain-icon">
+                                <span><h3><span class="avg-humidity">humidity</span></h3></span>
+    
+                                
+                            </div>
+                            <div class="mapcard"> 
+                                <span class="first-name"><h3><span class="tomorrow-color"><span class="today-date11">Tomorrow</span></span></h3></span>
+                                <span class="first-name2"><h3><span class="min-temp1">0&deg;C</span> / <span class="max-temp1">0&deg;C</span></h3></span>
+                                <img src="Images/umbrella.png" alt="clouds and rain icon" class="rain-icon">
+                                <span><h3 class="avg-percipitation1"><span class="name-precipitation">rain</span></h3></span>
+                                <img src="Images/humidity.png" alt="humidity" class="rain-icon">
+                                <span><h3><span class="avg-humidity1">humidity</span></h3></span>
+                                
+                            </div>
+                            <div class="mapcard"> 
+                                <span class="first-name"><h3><span class="tomorrow-color"><span class="today-date2">Tomorrow</span></span></h3></span>
+                                <span class="first-name2"><h3><span class="min-temp2">0&deg;C</span> / <span class="max-temp2">0&deg;C</span></h3></span>
+                                <img src="Images/umbrella.png" alt="clouds and rain icon" class="rain-icon">
+                                <span><h3 class="avg-percipitation2"><span class="name-precipitation">rain</span></h3></span>
+                                <img src="Images/humidity.png" alt="humidity" class="rain-icon">
+                                <span><h3><span class="avg-humidity2">humidity</span></h3></span>
+                                
+                            </div>
+                            <div class="mapcard"> 
+                                <span class="first-name"><h3><span class="tomorrow-color"><span class="today-date3">Tomorrow</span></span></h3></span>
+                                <span class="first-name2"><h3><span class="min-temp3">0&deg;C</span> / <span class="max-temp3">0&deg;C</span></h3></span>
+                                <img src="Images/umbrella.png" alt="clouds and rain icon" class="rain-icon">
+                                <span><h3 class="avg-percipitation3"><span class="name-precipitation">rain</span></h3></span>
+                                <img src="Images/humidity.png" alt="humidity" class="rain-icon">
+                                <span><h3><span class="avg-humidity3">humidity</span></h3></span>
+                                
+                            </div>
+                            <div class="mapcard"> 
+                                <span class="first-name"><h3><span class="tomorrow-color"><span class="today-date4">Tomorrow</span></span></h3></span>
+                                <span class="first-name2"><h3><span class="min-temp4">0&deg;C</span> / <span class="max-temp4">0&deg;C</span></h3></span>
+                                <img src="Images/umbrella.png" alt="clouds and rain icon" class="rain-icon">
+                                <span><h3 class="avg-percipitation4"><span class="name-precipitation">rain</span></h3></span>
+                                <img src="Images/humidity.png" alt="humidity" class="rain-icon">
+                                <span><h3><span class="avg-humidity4">humidity</span></h3></span>
+                                
+                            </div>
+                            <div class="mapcard"> 
+                                <span class="first-name"><h3><span class="tomorrow-color"><span class="today-date5">Tomorrow</span></span></h3></span>
+                                <span class="first-name2"><h3><span class="min-temp5">0&deg;C</span> / <span class="max-temp5">0&deg;C</span></h3></span>
+                                <img src="Images/umbrella.png" alt="clouds and rain icon" class="rain-icon">
+                                <span><h3 class="avg-percipitation5"><span class="name-precipitation">rain</span></h3></span>
+                                <img src="Images/humidity.png" alt="humidity" class="rain-icon">
+                                <span><h3><span class="avg-humidity5">humidity</span></h3></span>
+                                
+                            </div>
+                        </div> 
+
+
+                        <div class="ftitle6">
+                            <h2>Sever Weather Alerts</h2>
+                            <h2><span class="report4">Your location</span></h2>
+                        </div>
+
+                        <section id="scroll2">
+                            <div class="alert-card">
+
+                                <div>
+                                    <div class="text-in-card">
+                                        <div>
+                                            <h3 class="title-type"><span class="the-padding">Title: NO ALERTS IN YOUR REGION</span></h3>
+                                        </div>
+                                        <div>
+                                            <h3 class="severity-type">Severity: </h3>
+                                        </div>
+                                        <div>
+                                            <h3 class="region-type">Region: </h3>
+                                        </div>
+                                        <div>
+                                            <h4 class="from-time">Starting time: </h4>
+                                        </div>
+                                        <div>
+                                            <h4 class="end-time">End time: </h4>
+                                        </div>
+                                        <div>
+                                            <p class="discription-type">Discription: </p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                
+                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+    
+    
+                <div id="dashleft">
+                    <div class="fourtabs">
+                        <div class="fbox">
+                            <div>
+                                <div class="ftitle">
+                                    <h3><span class="making-same-font">Current Condition</span></h3>
+                                    <h3><span class="report">Detailed Report</span></h3>
+                                </div>
+                            </div>
+                            <div id="box">
+                                <div class="card">
+                                    <div>
+                                        <img class="icon" src="./Images/Clouds animated.gif" alt="wind icon">
+                                    </div>
+                                    <div class="feels">
+                                        <h2 class="cloud-cover">Percent</h2>
+                                        <h4 class="fadefeels">Clouds Cover</h4>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="card">
+                                    <div>
+                                        
+                                    </div>
+                                    <div>
+                                        <img class="icon" src="./Images/Wind Animated Icon.gif" alt="wind icon">
+                                    </div>
+                                    <div class="feels">
+                                        <h2 class="wind-speed">00 km/h</h2>
+                                        <h4 class="fadefeels">Wind</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="box">
+                                <div class="card">
+                                    <div>
+                                        <img class="icon" src="./Images/Sun (1)..gif" alt="wind icon">
+                                    </div>
+                                    <div class="feels">
+                                        <h2 class="uv-index">Sun</h2>
+                                        <h4 class="fadefeels">UV Index</h4>
+                                    </div>
+                                </div>
+            
+                                <div class="card">
+                                    <div>
+                                        <img class="icon" src="./Images/Humid animated icons.gif" alt="wind icon">
+                                    </div>
+                                    <div class="feels">
+                                        <h2 class="humidity-current">Percent</h2>
+                                        <h4 class="fadefeels"> <span class="alert2">Humidity</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                
+            
+    
+                
+                    <div>
+                        <div>
+                            <div class="ftitle2">
+                                <h3>Air Quality Index  ( AQI )</h3>
+                                <h3><span class="report2">Pollutant concentration in μg/m3</span></h3>
+                            </div>
+                            <div>
+                                <div class="bottomtab">
+                                    <div class="particles">
+                                        <div class="aqi-data-list">
+                                            <div>
+                                                <h4 class="names-on-aqi">AQI</h4>
+                                                <h5 class="names-on-aqi2">level</h5>
+                                            </div>
+                                            <div>
+                                                <h1 class="names-on-aqi11"><span class="aqi-number-value">0</span></h1>
+                                            </div>
+                                        </div>
+                                        <div class="line-in-aqi-card">
+        
+                                        </div>
+                                        <div>
+                                            <div class="particles-list">
+                                                <div class="gif-data">
+                                                    <img src="./Images/co2.gif" alt="air particles" class="air-particles">
+                                                    <h6 class="names-on-aqi">CO<sub>2</sub></h6>
+                                                    <h4 class="names-on-aqi1"><span class="co-number">number</span></h4>
+                                                </div>
+        
+                                                <div class="gif-data">
+                                                    <img src="./Images/no2.gif" alt="air particles" class="air-particles">
+                                                    <h6 class="names-on-aqi">NO<sub>2</sub></h6>
+                                                    <h4 class="names-on-aqi1"><span class="no-number">number</span></h4>
+                                                </div>
+        
+                                                <div class="gif-data">
+                                                    <img src="./Images/03.gif" alt="air particles" class="air-particles">
+                                                    <h6 class="names-on-aqi">O<sub>3</sub></h6>
+                                                    <h4 class="names-on-aqi1"><span class="o-number">number</span></h4>
+                                                </div>
+                                            </div>
+                                            
+    
+    
+                                            <div>
+                                                <div class="particles-list1">
+                                                    <div class="gif-data">
+                                                        <img src="./Images/green pm10.gif" alt="air particles" class="air-particles">
+                                                        <h6 class="names-on-aqi">PM10</h6>
+                                                        <h4 class="names-on-aqi1"><span class="pm-number">number</span></h4>
+                                                    </div>
+                                                    <div class="gif-data">
+                                                        <img src="./Images/pm25.gif" alt="air particles" class="air-particles">
+                                                        <h6 class="names-on-aqi">PM25</h6>
+                                                        <h4 class="names-on-aqi1"><span class="pm1-number">number</span></h4>
+                                                    </div>
+            
+                                                    <div class="gif-data">
+                                                        <img src="./Images/so2.gif" alt="air particles" class="air-particles">
+                                                        <h6 class="names-on-aqi">SO<sub>2</sub></h6>
+                                                        <h4 class="names-on-aqi1"><span class="so-number">number</span></h4>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <section id="scroll1">
+                        <div class="ftitle5">
+                            <h2>Hourly Weather</h2>
+                            <h2><span class="report3">24 hours report</span></h2>
+                        </div>
+                        <div class="hour-card">
+                            <div class="hourly-data-card1">
+    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time">date</h3>
+                                    </div>
+                    
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp1">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid1">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind1">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc1"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time1">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp2">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid2">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind2">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc2"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time2">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp3">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid3">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind3">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc3"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time3">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp4">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid4">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind4">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc4"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time4">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp5">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid5">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind5">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc5"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time5">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp6">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid6">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind6">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc6"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time6">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp7">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid7">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind7">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc7"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time7">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp8">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid8">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind8">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc8"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time8">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp9">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid9">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind9">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc9"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time9">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp10">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid10">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind10">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc10"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time10">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp11">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid11">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind11">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc11"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time11">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp12">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid12">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind12">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc12"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time12">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp13">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid13">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind13">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc13"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time13">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp14">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid14">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind14">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc14"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time14">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp15">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid15">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind15">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc15"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time15">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp16">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid16">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind16">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc16"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time16">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp17">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid17">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind17">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc17"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time17">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp18">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid18">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind18">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc18"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time18">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp19">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid19">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind19">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc19"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time19">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp20">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid20">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind20">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc20"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time20">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp21">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid21">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind21">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc21"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time21">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp22">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid22">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind22">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc22"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time22">date</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="hourly-data-card">
+                                    <span class="distance-left">
+                                        <div>
+                                            <img src="./Images/thermometer.png" alt="hot" class="hourly-icon">
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <h3 class="hourly-temp23">hot</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/humidity.png" alt="humidity icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-humid23">humidity</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/wind.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-wind23">wind</h3>
+                                    </div>
+                                    <div>
+                                        <img src="./Images/clouds.png" alt="wind icon" class="hourly-icon">
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-disc23"></h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="hourly-time23">date</h3>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div>
+                <h1>Weather data provided by Tomorrow.io, OpenWeatherMap, and WeatherBit</h1>
+                <h4 class="footer-text">Designed by onairx</h4>
+            </div>
+        </footer>
+        
+    </body>
+</html>
