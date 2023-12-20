@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const location = locationInput.value.trim();
 
         if (location) {
-            const apiKey = // your api key;
+            const apiKey = '082791f9c58e60f64c3f48b9b72a25ab';
             const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${apiKey}`;
             fetch(apiUrl)
                 .then(response => response.json())
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     mylon = data[0].lon
                     myCityName = data[0].name
                     myStateName = data[0].state
-                    myUrlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylon}&appid=apiKeyab&units=metric`;
+                    myUrlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylon}&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`;
                     fetch(myUrlWeather)
                     .then(respone => respone.json())
                     .then(data => {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         cloudCover2Element.innerHTML = `${cloudCovers2}`
                     })
 
-                    airQualityDataUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${mylat}&lon=${mylon}&appid=apikey`;
+                    airQualityDataUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${mylat}&lon=${mylon}&appid=082791f9c58e60f64c3f48b9b72a25ab`;
                     fetch(airQualityDataUrl)
                     .then(response => response.json())
                     .then(data => {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     })
 
                     
-                    tomorrowUrl = `https://api.tomorrow.io/v4/weather/realtime?location=${mylat}%2C%20${mylon}&units=metric&apikey=apikey`;
+                    tomorrowUrl = `https://api.tomorrow.io/v4/weather/realtime?location=${mylat}%2C%20${mylon}&units=metric&apikey=yQpJTdvulhQvRXmb86e1T9WnBPSWf2oh`;
                     fetch(tomorrowUrl)
                     .then(response => response.json())
                     .then(data => {
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         uvIndexElement.innerHTML = `${uvIndexs}`
                     })
 
-                    tomorrowFiveDaysUrl = `https://api.tomorrow.io/v4/weather/forecast?location=${mylat}%2C%20${mylon}&timesteps=1d&units=metric&apikey=apikey`;
+                    tomorrowFiveDaysUrl = `https://api.tomorrow.io/v4/weather/forecast?location=${mylat}%2C%20${mylon}&timesteps=1d&units=metric&apikey=yQpJTdvulhQvRXmb86e1T9WnBPSWf2oh`;
                     fetch(tomorrowFiveDaysUrl)
                     .then(response => response.json())
                     .then(data => {
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     avgHumid5Element.innerHTML = `${avgHumid5}%`
                     })
 
-                    hourlyUrl = `https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=${mylat}&lon=${mylon}&appid=apikeyab&units=metric`;
+                    hourlyUrl = `https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=${mylat}&lon=${mylon}&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`;
                     fetch(hourlyUrl)
                     .then(response => response.json())
                     .then(data => {
@@ -770,7 +770,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     })
 
-                    weatherAlerts = `https://api.weatherbit.io/v2.0/alerts?lat=${mylat}&lon=${mylon}&key=apikey`;
+                    weatherAlerts = `https://api.weatherbit.io/v2.0/alerts?lat=${mylat}&lon=${mylon}&key=765018f980bf47cb8f854c2b127d607d`;
                     fetch(weatherAlerts)
                     .then(response => response.json())
                     .then(data => {
@@ -805,7 +805,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     console.error('Error:', error);
                     weatherResults.innerHTML = '<p>Failed to fetch weather data.</p>';
                 });
-        } else {
+            } else {
             weatherResults.innerHTML = '<p>Please enter a valid location.</p>';
         }
     });
@@ -821,7 +821,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const options = {method: 'GET', headers: {accept: 'application/json'}};
-    let data4 = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=37.565269&lon=126.979478&appid=apikeyab&units=metric`, options)
+    let data4 = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=37.565269&lon=126.979478&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`, options)
     .then(respone => respone.json())
     .then(data4 => {
         const temperature = Math.round(data4.main.temp);
@@ -862,7 +862,7 @@ const options = {method: 'GET', headers: {accept: 'application/json'}};
     })
 
 const options1 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data1 = fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=37.565269&lon=126.979478&appid=apikey`, options1)
+    let data1 = fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=37.565269&lon=126.979478&appid=082791f9c58e60f64c3f48b9b72a25ab`, options1)
     .then(respone => respone.json())
     .then(data1 => {
         const aqinumber = data1.list[0].main.aqi
@@ -895,7 +895,7 @@ const options1 = {method: 'GET', headers: {accept: 'application/json'}};
     })
 
 const options2 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data2 = fetch(`https://api.tomorrow.io/v4/weather/realtime?location=37.565269%2C%20126.979478&units=metric&apikey=apikey`, options2)
+    let data2 = fetch(`https://api.tomorrow.io/v4/weather/realtime?location=37.565269%2C%20126.979478&units=metric&apikey=yQpJTdvulhQvRXmb86e1T9WnBPSWf2oh`, options2)
     .then(respone => respone.json())
     .then(data2 => {
         const uvIndexs = data2.data.values.uvIndex;
@@ -904,7 +904,7 @@ const options2 = {method: 'GET', headers: {accept: 'application/json'}};
     })
 
 const options3 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data3 = fetch(`https://api.tomorrow.io/v4/weather/forecast?location=37.565269%2C%20126.979478&timesteps=1d&units=metric&apikey=apikey`, options3)
+    let data3 = fetch(`https://api.tomorrow.io/v4/weather/forecast?location=37.565269%2C%20126.979478&timesteps=1d&units=metric&apikey=yQpJTdvulhQvRXmb86e1T9WnBPSWf2oh`, options3)
     .then(respone => respone.json())
     .then(data3 => {
 
@@ -1061,7 +1061,7 @@ const options3 = {method: 'GET', headers: {accept: 'application/json'}};
     })
 
 const options4 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data = fetch(`https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=37.565269&lon=126.979478&appid=apikeya25ab&units=metric`, options4)
+    let data = fetch(`https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=37.565269&lon=126.979478&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`, options4)
     .then(respone => respone.json())
     .then(data => {
 
@@ -1571,7 +1571,7 @@ const options4 = {method: 'GET', headers: {accept: 'application/json'}};
         })
 
 const options6 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data6 = fetch(`https://api.weatherbit.io/v2.0/alerts?lat=37.565269&lon=126.979478&key=apikey`, options6)
+    let data6 = fetch(`https://api.weatherbit.io/v2.0/alerts?lat=37.565269&lon=126.979478&key=765018f980bf47cb8f854c2b127d607d`, options6)
     .then(respone => respone.json())
     .then(data6 => {
 
