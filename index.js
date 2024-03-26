@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     mylon = data[0].lon
                     myCityName = data[0].name
                     myStateName = data[0].state
-                    myUrlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylon}&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`;
+                    myUrlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylon}&appid=YourAPIKey&units=metric`;
                     fetch(myUrlWeather)
                     .then(respone => respone.json())
                     .then(data => {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         cloudCover2Element.innerHTML = `${cloudCovers2}`
                     })
 
-                    airQualityDataUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${mylat}&lon=${mylon}&appid=082791f9c58e60f64c3f48b9b72a25ab`;
+                    airQualityDataUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${mylat}&lon=${mylon}&appid=YourAPIKey`;
                     fetch(airQualityDataUrl)
                     .then(response => response.json())
                     .then(data => {
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     avgHumid5Element.innerHTML = `${avgHumid5}%`
                     })
 
-                    hourlyUrl = `https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=${mylat}&lon=${mylon}&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`;
+                    hourlyUrl = `https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=${mylat}&lon=${mylon}&appid=YourAPIKey&units=metric`;
                     fetch(hourlyUrl)
                     .then(response => response.json())
                     .then(data => {
@@ -821,7 +821,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const options = {method: 'GET', headers: {accept: 'application/json'}};
-    let data4 = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=37.565269&lon=126.979478&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`, options)
+    let data4 = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=37.565269&lon=126.979478&appid=YourAPIKey&units=metric`, options)
     .then(respone => respone.json())
     .then(data4 => {
         const temperature = Math.round(data4.main.temp);
@@ -862,7 +862,7 @@ const options = {method: 'GET', headers: {accept: 'application/json'}};
     })
 
 const options1 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data1 = fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=37.565269&lon=126.979478&appid=082791f9c58e60f64c3f48b9b72a25ab`, options1)
+    let data1 = fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=37.565269&lon=126.979478&appid=YourAPIKey`, options1)
     .then(respone => respone.json())
     .then(data1 => {
         const aqinumber = data1.list[0].main.aqi
@@ -1061,7 +1061,7 @@ const options3 = {method: 'GET', headers: {accept: 'application/json'}};
     })
 
 const options4 = {method: 'GET', headers: {accept: 'application/json'}};
-    let data = fetch(`https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=37.565269&lon=126.979478&appid=082791f9c58e60f64c3f48b9b72a25ab&units=metric`, options4)
+    let data = fetch(`https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=37.565269&lon=126.979478&appid=YourAPIKey&units=metric`, options4)
     .then(respone => respone.json())
     .then(data => {
 
